@@ -1,5 +1,7 @@
 import Logo from "../assets/Logo.svg";
+import HeroImage from '../assets/HeroImage.svg';
 const images = {
-    Logo,
-};
+     Logo,
+     HeroImage,
+    };
 export default images;
