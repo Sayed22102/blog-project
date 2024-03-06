@@ -11,17 +11,17 @@ const ArticleCard = ({ className}) => {
         <p className="text-dark-light mt-3 text-sm md:text-lg">Majority of peole will work in jobs that don’t exist today.</p>
         <div className="flex justify-between flex-nowrap items-center mt-6">
           <div className="flex items-center gap-x-2 md:gap-x-2.5">
-            <img src={images.PostProfileImage} alt='Post Profile' />
+            <img src={images.PostProfileImage} alt='Post Profile' className="w-9 h-9 md:w-10 md:h-10 rounded-full" />
             <div className="flex flex-col">
               <h4 className="font-bold italic text-dark-soft text-sm md:text-base">Viola Manisa</h4>
               <div className="flex items-center gap-x-2">
                 <samp className='bg-[#36B37E] w-fit bg-opacity-20 p-1.5 rounded-full'>
                   <BsCheckLg className='w-1.5 h-1.5 text-[#36B37E]' /></samp>
-                <samp></samp>
+                <samp className="italic text-dark-light text-xs md:text-sm">Verified writer</samp>
               </div>
             </div>
           </div>
-          <samp>02 May</samp>
+          <samp className="font-bold text-dark-light italic text-sm md:text-base">02 May</samp>
         </div>
       </div>
     
