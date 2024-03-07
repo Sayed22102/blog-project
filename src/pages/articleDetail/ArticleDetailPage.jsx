@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BreadCrumbs from "../../components/BreadCrumbs";
 import MainLayout from "../../components/MainLayout";
+import SocialShareButtons from "../../components/SocialShareButtons";
 import { images } from "../../constants";
 import SuggestedPosts from "./container/SuggestedPosts";
 
@@ -77,12 +78,27 @@ const ArticleDetailPage = () => {
             </p>
           </div>
         </article>
-        <SuggestedPosts
-          header="Latest Article"
-          posts={postsData}
-          tags={tagsData}
-          className="mt-8 lg:mt-0 lg:max-w-xs"
-        />
+        <div>
+          <SuggestedPosts
+            header="Latest Article"
+            posts={postsData}
+            tags={tagsData}
+            className="mt-8 lg:mt-0 lg:max-w-xs"
+          />
+          <div className="mt-7">
+            <h2 className="font-roboto font-medium text-dark-hard mb-4 md:text-xl">
+              Share on:
+            </h2>
+            <SocialShareButtons
+              url={encodeURI(
+                "https://moonfo.com/post/client-side-and-server-side-explanation"
+              )}
+              title={encodeURIComponent(
+                "Client-side and Server-side explanation"
+              )}
+            />
+          </div>
+        </div>
       </section>
     </MainLayout>
   );
