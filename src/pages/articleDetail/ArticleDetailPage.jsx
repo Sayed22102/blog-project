@@ -10,7 +10,6 @@ const breadCrumbsData = [
   { name: "Blog", link: "/blog" },
   { name: "Article title", link: "/blog/1" },
 ];
-
 const postsData = [
   {
     _id: "1",
@@ -37,7 +36,6 @@ const postsData = [
     createdAt: "2023-01-28T15:35:53.607+0000",
   },
 ];
-
 const tagsData = [
   "Medical",
   "Lifestyle",
@@ -47,7 +45,6 @@ const tagsData = [
   "Diet",
   "Education",
 ];
-
 const ArticleDetailPage = () => {
   return (
     <MainLayout>
@@ -90,5 +87,4 @@ const ArticleDetailPage = () => {
     </MainLayout>
   );
 };
-
 export default ArticleDetailPage;
