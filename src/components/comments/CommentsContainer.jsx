@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { getCommentsData } from "../../data/comments";
+import { getCommentsData } from "../../constants/data/comments";
 import Comment from "./Comment";
 import CommentForm from "./CommentForm";
 
